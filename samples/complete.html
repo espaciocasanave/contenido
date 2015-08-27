@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>El titulo de la página...</title>
+    <style>
+        html, body, canvas {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+        canvas {
+            background: black;
+        }
+    </style>
+  </head>
+
+  <body>
+    <canvas id="visuales"></canvas>
+
+    <script>
+    // Variables utilizadas para determinar como pintar cada cuadro.
+    // Por el momento solo 'p' (para acordarme que me refiero a 'posición')
+    var p = 0;
+
+    // Preparar superficie de dibujo.
+    // Para empezar pueden ignorar tranquilamente esta parte.
+    // Por ahora lo que importa es que 'ctx' tiene lo que
+    // necesitamos para pintar en el <canvas> llamado 'visuales'.
+    var visuales = document.getElementById('visuales');
+    var ctx = visuales.getContext('2d');
+    visuales.width = visuales.clientWidth;
+    visuales.height = visuales.clientHeight;
+    var W = visuales.width;
+    var H = visuales.height;
+
+    // como actualizar las variables antes de pintar
+    function actualizar() {
+        p = p + 1;
+    }
+
+    // motor de dibujo
+    function pintar() {
+        // Ejecutar la función de arriba así se actualicen las variables.
+        actualizar();
+
+        // Borrar la imagen anterior antes de pintar el próximo cuadro.
+        // Pueden probar ver que pasa si eliminan esta linea.
+        ctx.clearRect(0,0,W,H);  
+
+        // Elegir el color rojo para las próximas operaciones
+        ctx.fillStyle = 'red';  
+
+        // Llenar un cuadrado de 100px de largo y posicion
+        // según el valor de 'p' y del color elegido arriba.
+        ctx.fillRect(p, p, 100, 100);
+
+        // Agendar próximo cuadro dentro de 16ms (60 cuadros x seg).
+        // Para hacerlo le paso el nombre de la función que tiene que
+        // ejecutar cuando llegue el momento de pintar el próximo cuadro.
+        // No es coincidencia que haya elegido que se llame 'pintar' jeje.
+        window.requestAnimationFrame(pintar);  
+    }
+
+    // lanzar motor (ejecutar 'pintar' por primera vez, luego se autoagenda)
+    pintar();
+    </script>
+  </body>
+</html>
