@@ -1,0 +1,9 @@
+li {
+    height: 14px;
+    transition: height 1s, background-color 1s;
+}
+li:hover {
+
+    background:green;
+    height:50px;
+}
