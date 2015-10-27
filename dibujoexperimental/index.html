@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+        body {
+            margin: 0;
+        }
+        h1, h2 {
+            font-family: 'Gloria Hallelujah', cursive;
+            text-align: center;
+            margin: 0;
+        }
+        h1 {
+            font-size:40px;
+            margin-top: 30px;
+        }
+        h2 {
+            font-size:14px;
+        }
+        #flyer {
+            width: 600px;
+            height: 350px;
+            margin: auto;
+            margin-top: 10px;
+            padding: 124px;
+            position:relative;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.75);
+            border-radius: 20px;
+            background: url('background.png');
+            background-size: 100% 100%;
+        }
+        #detalle {
+            font-size:30px;
+        }
+        #experimental {
+            width: 200px;
+            vertical-align: middle;
+        }
+        #T, #A {
+            width:30px;
+            vertical-align: middle;
+        }
+        p {
+            text-align: center;
+            margin: 0;
+            margin-bottom: 9px;
+        }
+        a {
+            color:maroon;
+        }
+        #bg, #particles-js {
+            position:absolute;
+            width: 100%; height: 100%;
+            top: 0; left: 0;
+        }
+        h1:before {
+            position:absolute;
+            top: 0; left: 0;
+            width:100%; height: 100%;
+            overflow: hidden;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+            color: #E8E8E8;
+            word-break: break-all;
+            z-index: -1;
+            margin: 0;
+            /*
+            content: 'ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO ARTE CONTEMPORANEO';
+            */
+        }
+    </style>
+</head>
+<body>
+
+<div id='flyer'>
+    <h1><img src='http://i.imgur.com/k0lvCZi.png' alt='ARTE CONTEMPORANEO'></h1>
+    <h2>LABORATORIO <span id='detalle'>DIBUJO <img id='experimental' src='flyer%20escaneado%201-2.png' alt='EXPERIMEN'><img id='T' src='t6t85.gif' alt='T'><img id='A' src='3DletterA.png' alt='A'>L</span></h2>
+    <p>por Enzo Palavecino / Marcos Espindola</p>
+    <p>inicio: <time datetime='2015/10/9'>lunes 9 de novienbre de 2015</time></p>
+    <p> email: <a href='mailto:tripulantesespaciocasanave@gmail.com'>tripulantes@nave.casa</a></p>
+    <canvas id="bg"></canvas>
+    <div id="particles-js"></div>
+</div>
+
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+    var text='ARTE CONTEMPORANEO ';
+
+    particlesJS("particles-js", {
+        "particles":{
+            "number":{
+                "value":80,
+                "density":{"enable":true,"value_area":800}
+            },
+            "color":{"value":"#000000"},
+            "shape":{
+                "type":"circle",
+                "stroke":{"width":0,"color":"#000000"},
+                "polygon":{"nb_sides":5},
+                "image":{"src":"img/github.svg","width":100,"height":100}
+            },
+            "opacity":{
+                "value":0.1,
+                "random":false,
+                "anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}
+            },"size":{
+                "value":5,
+                "random":true,
+                "anim":{"enable":true,"speed":36.54347455356053,"size_min":2,"sync":false}
+            },
+            "line_linked":{"enable":true,"distance":150,"color":"#000000","opacity":0.2,"width":1},
+            "move":{
+                "enable":true,
+                "speed":6,
+                "direction":"none",
+                "random":false,
+                "straight":false,
+                "out_mode":"out",
+                "bounce":false,
+                "attract":{"enable":false,"rotateX":600,"rotateY":1200}
+            }
+        },
+        "interactivity":{
+            "detect_on":"canvas",
+            "events":{
+                "onhover":{"enable":true,"mode":"grab"},
+                "onclick":{"enable":true,"mode":"push"},
+                "resize":true
+            },
+            "modes":{
+                "grab":{
+                    "distance":239.76023976023976,
+                    "line_linked":{"opacity":0.5}
+                },
+                "bubble":{
+                    "distance":400,
+                    "size":40,
+                    "duration":2,
+                    "opacity":8,
+                    "speed":3
+                },
+                "repulse":{"distance":200,"duration":0.4},
+                "push":{"particles_nb":4},
+                "remove":{"particles_nb":2}
+            }
+        },
+        "retina_detect":true
+    });
+    var count_particles, stats, update; stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector('.js-count-particles');
+    update = function() {
+        stats.begin();
+        stats.end();
+        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+            count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+    ;
+</script>
+</body>
+</html>
